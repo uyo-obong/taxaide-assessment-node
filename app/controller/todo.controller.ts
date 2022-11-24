@@ -11,6 +11,10 @@ class TodoController {
     await this.todoService.fetchTodos(req, res);
   };
 
+  fetchSingleTodos = async (req: IRequest, res: IResponse) => {
+    await this.todoService.fetchSingleTodos(req, res);
+  };
+
   createTodo = async (req: IRequest, res: IResponse) => {
     await this.todoService.createTodo(req, res);
   };

@@ -6,6 +6,7 @@ import express from 'express';
 export default (req: IRequest, res: IResponse, next: INext) => {
   const header = req.header(config.web.header_name);
   if (!header) return res.unauthorized();
+  console.log(header)
 
   try {
     const decoded = jwt.verify(header, config.web.jwt_secret);

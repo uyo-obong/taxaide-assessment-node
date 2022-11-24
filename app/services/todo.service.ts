@@ -14,6 +14,11 @@ export class TodoService {
     return res.ok(todo, 'Success');
   };
 
+  public fetchSingleTodos = async (req: IRequest, res: IResponse) => {
+    const todo = await TodoSchema.find({ _id: req.params.id });
+    return res.ok(todo, 'Success');
+  };
+
   /**
    *
    * @param req
