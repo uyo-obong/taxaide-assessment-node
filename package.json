@@ -8,6 +8,8 @@
     "dev": "nodemon server.ts",
     "build": "rimraf .dist && tsc",
     "start": "npm run build && node .dist/server.js",
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "postinstall": "npm run tsc",
     "docker:build": "docker-compose build",
     "docker:bash": "docker-compose up"
   },
