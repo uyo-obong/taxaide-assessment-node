@@ -2,7 +2,7 @@
   "name": "TODO API",
   "version": "1.0.0",
   "description": "TODO API",
-  "main": "server.js",
+  "main": "dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.ts",
